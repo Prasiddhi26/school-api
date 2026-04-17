@@ -3,7 +3,22 @@
 A Node.js + Express.js + MySQL backend project that allows users to add schools and retrieve a list of schools sorted by proximity based on user location.
 
 ---
+## 🌍 Live API
 
+Base URL:
+
+https://your-render-url.onrender.com
+Endpoints:
+
+➕ Add School (POST)
+
+POST /addSchool
+
+📍 List Schools (GET)
+
+GET /listSchools?latitude=19.1&longitude=72.9
+
+---
 ## 🚀 Features
 
 - Add new school with name, address, latitude, longitude
