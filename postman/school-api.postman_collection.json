@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "de8dbb1e-5b6e-4cab-a8ca-261642fd8d92",
+    "name": "School api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46678341",
+    "_collection_link": "https://go.postman.co/collection/46678341-de8dbb1e-5b6e-4cab-a8ca-261642fd8d92?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "add school",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Delhi Public School\",\r\n  \"address\": \"Mumbai\",\r\n  \"latitude\": 19.0760,\r\n  \"longitude\": 72.8777\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5000/addSchool",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "list schools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5000/listSchools?latitude=19.1&longitude=72.9",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "19.1"
+            },
+            {
+              "key": "longitude",
+              "value": "72.9"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
